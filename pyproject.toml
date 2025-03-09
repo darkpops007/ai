@@ -1,0 +1,20 @@
+[project]
+name = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel"
+version = "0.1.0"
+description = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.86.0,<1.0.0"
+]
+
+[project.scripts]
+equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel.main:run"
+run_crew = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel.main:run"
+train = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel.main:train"
+replay = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel.main:replay"
+test = "equipe_crew_ai_pour_analyse_du_marche_crypto_en_temps_reel.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
